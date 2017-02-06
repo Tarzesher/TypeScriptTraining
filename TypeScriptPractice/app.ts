@@ -1,24 +1,26 @@
-﻿class Auto {
-    constructor(
-        public mph = 0,
-        public wheels = 4,
-        public doors?) {
-        
+﻿module Vehicle {
+    class Auto {
+        constructor(
+            public mph = 0,
+            public wheels = 4,
+            public doors?) {
+
+        }
+
+        drive(speed) {
+            this.mph += speed;
+        }
+
+        stop() {
+            this.mph = 0;
+        }
+
     }
 
-    drive(speed) {
-        this.mph += speed;
+    export class Motorcycle extends Auto {
+        doors = 0;
+        wheels = 2;
     }
-
-    stop() {
-        this.mph = 0;
-    }
-
 }
 
-class Motorcycle extends Auto {
-    doors = 0;
-    wheels = 2;
-}
-
-var bike = new Motorcycle();
+var bike = new Vehicle.Motorcycle();
