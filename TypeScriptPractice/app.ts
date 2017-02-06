@@ -1,26 +1,20 @@
-﻿module Vehicle {
-    class Auto {
-        constructor(
-            public mph = 0,
-            public wheels = 4,
-            public doors?) {
+﻿interface ITrip {
+    destination: string;
+    when: any;
+}
+
+module Vehicle {
+    export class Auto {
+        wheels: number;
+        door: number;
+
+        travel(t: ITrip) {
 
         }
-
-        drive(speed) {
-            this.mph += speed;
-        }
-
-        stop() {
-            this.mph = 0;
-        }
-
-    }
-
-    export class Motorcycle extends Auto {
-        doors = 0;
-        wheels = 2;
     }
 }
 
-var bike = new Vehicle.Motorcycle();
+var car = new Vehicle.Auto();
+    car.door = 4;
+    car.wheels = 4;
+    car.travel({destination: "mavambe", when: 1730});

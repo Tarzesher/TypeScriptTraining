@@ -1,36 +1,16 @@
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
 var Vehicle;
 (function (Vehicle) {
     var Auto = (function () {
-        function Auto(mph, wheels, doors) {
-            if (mph === void 0) { mph = 0; }
-            if (wheels === void 0) { wheels = 4; }
-            this.mph = mph;
-            this.wheels = wheels;
-            this.doors = doors;
+        function Auto() {
         }
-        Auto.prototype.drive = function (speed) {
-            this.mph += speed;
-        };
-        Auto.prototype.stop = function () {
-            this.mph = 0;
+        Auto.prototype.travel = function (t) {
         };
         return Auto;
     }());
-    var Motorcycle = (function (_super) {
-        __extends(Motorcycle, _super);
-        function Motorcycle() {
-            _super.apply(this, arguments);
-            this.doors = 0;
-            this.wheels = 2;
-        }
-        return Motorcycle;
-    }(Auto));
-    Vehicle.Motorcycle = Motorcycle;
+    Vehicle.Auto = Auto;
 })(Vehicle || (Vehicle = {}));
-var bike = new Vehicle.Motorcycle();
+var car = new Vehicle.Auto();
+car.door = 4;
+car.wheels = 4;
+car.travel({ destination: "mavambe", when: 1730 });
 //# sourceMappingURL=app.js.map
