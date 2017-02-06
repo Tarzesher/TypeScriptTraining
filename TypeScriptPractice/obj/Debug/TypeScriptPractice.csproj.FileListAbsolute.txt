@@ -1,0 +1,6 @@
+C:\TrainingPlural\TypeScript\TypeScriptPractice\TypeScriptPractice\bin\TypeScriptPractice.dll.config
+C:\TrainingPlural\TypeScript\TypeScriptPractice\TypeScriptPractice\bin\TypeScriptPractice.dll
+C:\TrainingPlural\TypeScript\TypeScriptPractice\TypeScriptPractice\bin\TypeScriptPractice.pdb
+C:\TrainingPlural\TypeScript\TypeScriptPractice\TypeScriptPractice\obj\Debug\TypeScriptPractice.csprojResolveAssemblyReference.cache
+C:\TrainingPlural\TypeScript\TypeScriptPractice\TypeScriptPractice\obj\Debug\TypeScriptPractice.dll
+C:\TrainingPlural\TypeScript\TypeScriptPractice\TypeScriptPractice\obj\Debug\TypeScriptPractice.pdb
