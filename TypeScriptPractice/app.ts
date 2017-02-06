@@ -1,16 +1,24 @@
-﻿interface IBook {
-    title: string;
-    author: string;
-    bookInfo: () => string;
+﻿class Auto {
+    constructor(
+        public mph = 0,
+        public wheels = 4,
+        public doors?) {
+        
+    }
+
+    drive(speed) {
+        this.mph += speed;
+    }
+
+    stop() {
+        this.mph = 0;
+    }
+
 }
 
-var b: IBook = {
-    title: "Blood in the Sand",
-    author: "Tedesca",
-      bookInfo: function() {
-          return this.title + " by :" + this.author;
-      }
+class Motorcycle extends Auto {
+    doors = 0;
+    wheels = 2;
 }
 
-var book = b.bookInfo();
-alert(book);
+var bike = new Motorcycle();
